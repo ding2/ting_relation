@@ -189,7 +189,7 @@ function ting_relation_get_abstract($relation) {
       break;
   }
 
-  return empty($abstract) ? FALSE : $abstract;
+  return empty($abstract) ? FALSE : strip_tags($abstract);
 }
 
 /**
